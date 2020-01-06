@@ -1,4 +1,4 @@
-module Translations exposing (Lang(..), baseDec, baseFont, baseInc, baseNext, basePrev, baseSearch, baseToc, cAmber, cBlue, cBright, cColor, cDark, cDefault, cGray, cGreen, cPurple, codeExecute, codeFirst, codeLast, codeMaximize, codeMinimize, codeNext, codePrev, codeRunning, confInformations, confSettings, confShare, confTranslations, getLnFromCode, infoAuthor, infoDate, infoEmail, infoVersion, modePresentation, modeSlides, modeTextbook, no_translation, quizCheck, quizChecked, quizHint, quizResolved, quizSolution, soundOff, soundOn, surveySubmit, surveySubmitted, surveyText)
+module Translations exposing (Lang(..), baseDec, baseFont, baseInc, baseNext, basePrev, baseSearch, baseToc, cAmber, cBlue, cBright, cColor, cDark, cDefault, cGray, cGreen, cPurple, cVIB, codeExecute, codeFirst, codeLast, codeMaximize, codeMinimize, codeNext, codePrev, codeRunning, confInformations, confSettings, confShare, confTranslations, getLnFromCode, infoAuthor, infoDate, infoEmail, infoVersion, modePresentation, modeSlides, modeTextbook, no_translation, quizCheck, quizChecked, quizHint, quizResolved, quizSolution, soundOff, soundOn, surveySubmit, surveySubmitted, surveyText)
 
 
 type Lang
@@ -463,6 +463,29 @@ cPurple lang =
         Ua ->
             "фіолетовий"
 
+cVIB : Lang -> String
+cVIB lang =
+    case lang of
+        Bg ->
+            "VIB"
+
+        De ->
+            "VIB"
+
+        En ->
+            "VIB"
+
+        Fa ->
+            "VIB"
+
+        Hy ->
+            "VIB"
+
+        Nl ->
+            "VIB"
+
+        Ua ->
+            "VIB"
 
 modeTextbook : Lang -> String
 modeTextbook lang =

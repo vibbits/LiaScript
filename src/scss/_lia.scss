@@ -6,6 +6,7 @@
 @import "slide";
 @import "plain";
 @import "controls";
+@import "header";
 
 @mixin create-theme($theme, $theme-name) {
     $dark: (
@@ -41,7 +42,7 @@
         padding: 0;
         width: 100%;
         height: 100%;
-        font-family: "Roboto";
+        font-family: "OpenSans", "Roboto";
         overflow: hidden;
 
         * {
@@ -50,10 +51,12 @@
 
         .lia-variant-light {
             @include _new-theme($theme, $theme-name);
+
         }
 
         .lia-variant-dark {
             @include _new-theme($dark, $theme-name);
+
         }
 
         .lia-icon {
@@ -69,6 +72,7 @@
                 @keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
             }
         }
+
     }
 }
 

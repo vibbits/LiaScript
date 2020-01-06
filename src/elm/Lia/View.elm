@@ -22,10 +22,9 @@ view : Screen -> Model -> Html Msg
 view screen model =
     Html.div
         (Settings.design model.settings)
-        [ view_aside model
-        , view_article screen model
+        [  view_aside model
+           , view_article screen model
         ]
-
 
 view_aside : Model -> Html Msg
 view_aside model =
