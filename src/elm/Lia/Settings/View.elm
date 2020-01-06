@@ -112,7 +112,6 @@ design_theme lang theme =
     , ( "green", "right", Trans.cGreen lang )
     , ( "grey", "left", Trans.cGray lang )
     , ( "purple", "right", Trans.cPurple lang )
-    , ( "vib", "left", Trans.cVIB lang )
     ]
         |> List.map (\( c, b, text ) -> check_list (c == theme) c text b)
         |> Html.div [ Attr.class "lia-color" ]
